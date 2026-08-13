@@ -1,0 +1,1049 @@
+{
+  "processName": "LegacyForms",
+  "dumpedAt": "2026-08-13T18:55:55.3130598Z",
+  "root": {
+    "AutomationId": "MainForm",
+    "Name": "LegacyForms",
+    "ControlType": "Window",
+    "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+    "IsEnabled": true,
+    "IsOffscreen": false,
+    "NativeWindowHandle": 2360834,
+    "Patterns": [
+      "Window",
+      "Transform",
+      "LegacyIAccessible"
+    ],
+    "Children": [
+      {
+        "AutomationId": "contentPanel",
+        "Name": null,
+        "ControlType": "Pane",
+        "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 1181260,
+        "Patterns": [
+          "Scroll",
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": "groupBox1",
+            "Name": "Employee Details",
+            "ControlType": "Group",
+            "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 1443614,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": [
+              {
+                "AutomationId": "label1",
+                "Name": "Name:",
+                "ControlType": "Text",
+                "ClassName": "WindowsForms10.STATIC.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1443406,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "textBox1",
+                "Name": "Name:",
+                "ControlType": "Edit",
+                "ClassName": "WindowsForms10.EDIT.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 2295250,
+                "Patterns": [
+                  "Value",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "label2",
+                "Name": "Employee ID:",
+                "ControlType": "Text",
+                "ClassName": "WindowsForms10.STATIC.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 722360,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "textBox2",
+                "Name": "Employee ID:",
+                "ControlType": "Edit",
+                "ClassName": "WindowsForms10.EDIT.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 2229492,
+                "Patterns": [
+                  "Value",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "label3",
+                "Name": "Department:",
+                "ControlType": "Text",
+                "ClassName": "WindowsForms10.STATIC.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 853388,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "textBox3",
+                "Name": "Department:",
+                "ControlType": "Edit",
+                "ClassName": "WindowsForms10.EDIT.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1507924,
+                "Patterns": [
+                  "Value",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "label4",
+                "Name": "Status:",
+                "ControlType": "Text",
+                "ClassName": "WindowsForms10.STATIC.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1639898,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "comboBox1",
+                "Name": "Status:",
+                "ControlType": "ComboBox",
+                "ClassName": "WindowsForms10.COMBOBOX.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1967652,
+                "Patterns": [
+                  "Value",
+                  "ExpandCollapse",
+                  "LegacyIAccessible"
+                ],
+                "Children": [
+                  {
+                    "AutomationId": null,
+                    "Name": "Status:",
+                    "ControlType": "Text",
+                    "ClassName": null,
+                    "IsEnabled": true,
+                    "IsOffscreen": false,
+                    "NativeWindowHandle": 0,
+                    "Patterns": [
+                      "LegacyIAccessible"
+                    ],
+                    "Children": []
+                  },
+                  {
+                    "AutomationId": null,
+                    "Name": "Open",
+                    "ControlType": "Button",
+                    "ClassName": null,
+                    "IsEnabled": true,
+                    "IsOffscreen": false,
+                    "NativeWindowHandle": 0,
+                    "Patterns": [
+                      "Invoke",
+                      "LegacyIAccessible"
+                    ],
+                    "Children": []
+                  }
+                ]
+              },
+              {
+                "AutomationId": "label5",
+                "Name": "Join Date:",
+                "ControlType": "Text",
+                "ClassName": "WindowsForms10.STATIC.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1312540,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "dateTimePicker1",
+                "Name": "Join Date:",
+                "ControlType": "ComboBox",
+                "ClassName": "WindowsForms10.SysDateTimePick32.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1640118,
+                "Patterns": [
+                  "Value",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "checkBox1",
+                "Name": "Full Time",
+                "ControlType": "CheckBox",
+                "ClassName": "WindowsForms10.BUTTON.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 984694,
+                "Patterns": [
+                  "Invoke",
+                  "Toggle",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "groupBox2",
+                "Name": "Shift",
+                "ControlType": "Group",
+                "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1967654,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": [
+                  {
+                    "AutomationId": "radioButton1",
+                    "Name": "Day",
+                    "ControlType": "RadioButton",
+                    "ClassName": "WindowsForms10.BUTTON.app.0.141b42a_r7_ad1",
+                    "IsEnabled": true,
+                    "IsOffscreen": false,
+                    "NativeWindowHandle": 984684,
+                    "Patterns": [
+                      "Invoke",
+                      "SelectionItem",
+                      "LegacyIAccessible"
+                    ],
+                    "Children": []
+                  },
+                  {
+                    "AutomationId": "radioButton2",
+                    "Name": "Night",
+                    "ControlType": "RadioButton",
+                    "ClassName": "WindowsForms10.BUTTON.app.0.141b42a_r7_ad1",
+                    "IsEnabled": true,
+                    "IsOffscreen": false,
+                    "NativeWindowHandle": 1574356,
+                    "Patterns": [
+                      "Invoke",
+                      "SelectionItem",
+                      "LegacyIAccessible"
+                    ],
+                    "Children": []
+                  }
+                ]
+              },
+              {
+                "AutomationId": "label6",
+                "Name": "Salary Band (1-12):",
+                "ControlType": "Text",
+                "ClassName": "WindowsForms10.STATIC.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 1443402,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "numericUpDown1",
+                "Name": "Salary Band (1-12):",
+                "ControlType": "Spinner",
+                "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 3343958,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": [
+                  {
+                    "AutomationId": "3933716",
+                    "Name": "NumericUpDown",
+                    "ControlType": "Spinner",
+                    "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+                    "IsEnabled": true,
+                    "IsOffscreen": false,
+                    "NativeWindowHandle": 3933716,
+                    "Patterns": [
+                      "LegacyIAccessible"
+                    ],
+                    "Children": [
+                      {
+                        "AutomationId": null,
+                        "Name": "Up",
+                        "ControlType": "Button",
+                        "ClassName": null,
+                        "IsEnabled": true,
+                        "IsOffscreen": false,
+                        "NativeWindowHandle": 0,
+                        "Patterns": [
+                          "Invoke",
+                          "LegacyIAccessible"
+                        ],
+                        "Children": []
+                      },
+                      {
+                        "AutomationId": null,
+                        "Name": "Down",
+                        "ControlType": "Button",
+                        "ClassName": null,
+                        "IsEnabled": true,
+                        "IsOffscreen": false,
+                        "NativeWindowHandle": 0,
+                        "Patterns": [
+                          "Invoke",
+                          "LegacyIAccessible"
+                        ],
+                        "Children": []
+                      }
+                    ]
+                  },
+                  {
+                    "AutomationId": "1770812",
+                    "Name": "Salary Band (1-12):",
+                    "ControlType": "Edit",
+                    "ClassName": "WindowsForms10.EDIT.app.0.141b42a_r7_ad1",
+                    "IsEnabled": true,
+                    "IsOffscreen": false,
+                    "NativeWindowHandle": 1770812,
+                    "Patterns": [
+                      "Value",
+                      "LegacyIAccessible"
+                    ],
+                    "Children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "AutomationId": "panel1",
+            "Name": null,
+            "ControlType": "Pane",
+            "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 4326804,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "panel2",
+            "Name": null,
+            "ControlType": "Pane",
+            "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 2034004,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "listBox1",
+            "Name": null,
+            "ControlType": "List",
+            "ClassName": "WindowsForms10.LISTBOX.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 5244616,
+            "Patterns": [
+              "Selection",
+              "LegacyIAccessible"
+            ],
+            "Children": [
+              {
+                "AutomationId": null,
+                "Name": "E001 - John Smith",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "E002 - Mary Johnson",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "E003 - Robert Brown",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "E004 - Patricia Davis",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "E005 - Michael Wilson",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "E006 - Linda Miller",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "E007 - James Moore",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "E008 - Barbara Taylor",
+                "ControlType": "ListItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "SelectionItem",
+                  "ScrollItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              }
+            ]
+          },
+          {
+            "AutomationId": "tabControl1",
+            "Name": null,
+            "ControlType": "Tab",
+            "ClassName": "WindowsForms10.SysTabControl32.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 1312762,
+            "Patterns": [
+              "Selection",
+              "LegacyIAccessible"
+            ],
+            "Children": [
+              {
+                "AutomationId": "tabPage1",
+                "Name": "Notes",
+                "ControlType": "Pane",
+                "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 787660,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": [
+                  {
+                    "AutomationId": "textBox4",
+                    "Name": null,
+                    "ControlType": "Edit",
+                    "ClassName": "WindowsForms10.EDIT.app.0.141b42a_r7_ad1",
+                    "IsEnabled": true,
+                    "IsOffscreen": false,
+                    "NativeWindowHandle": 592246,
+                    "Patterns": [
+                      "Value",
+                      "Scroll",
+                      "LegacyIAccessible"
+                    ],
+                    "Children": [
+                      {
+                        "AutomationId": "NonClientVerticalScrollBar",
+                        "Name": "Vertical",
+                        "ControlType": "ScrollBar",
+                        "ClassName": null,
+                        "IsEnabled": false,
+                        "IsOffscreen": false,
+                        "NativeWindowHandle": 0,
+                        "Patterns": [
+                          "RangeValue",
+                          "LegacyIAccessible"
+                        ],
+                        "Children": [
+                          {
+                            "AutomationId": "UpButton",
+                            "Name": "Line up",
+                            "ControlType": "Button",
+                            "ClassName": null,
+                            "IsEnabled": false,
+                            "IsOffscreen": false,
+                            "NativeWindowHandle": 0,
+                            "Patterns": [
+                              "Invoke",
+                              "LegacyIAccessible"
+                            ],
+                            "Children": []
+                          },
+                          {
+                            "AutomationId": "DownButton",
+                            "Name": "Line down",
+                            "ControlType": "Button",
+                            "ClassName": null,
+                            "IsEnabled": false,
+                            "IsOffscreen": false,
+                            "NativeWindowHandle": 0,
+                            "Patterns": [
+                              "Invoke",
+                              "LegacyIAccessible"
+                            ],
+                            "Children": []
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "AutomationId": null,
+                "Name": "Notes",
+                "ControlType": "TabItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "SelectionItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": null,
+                "Name": "History",
+                "ControlType": "TabItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "SelectionItem",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              }
+            ]
+          },
+          {
+            "AutomationId": "button1",
+            "Name": "Add",
+            "ControlType": "Button",
+            "ClassName": "WindowsForms10.BUTTON.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 853678,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "button2",
+            "Name": "Update",
+            "ControlType": "Button",
+            "ClassName": "WindowsForms10.BUTTON.app.0.141b42a_r7_ad1",
+            "IsEnabled": false,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 395030,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "button3",
+            "Name": "Delete",
+            "ControlType": "Button",
+            "ClassName": "WindowsForms10.BUTTON.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 2165012,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "button4",
+            "Name": "Clear",
+            "ControlType": "Button",
+            "ClassName": "WindowsForms10.BUTTON.app.0.141b42a_r7_ad1",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 264544,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "NonClientVerticalScrollBar",
+            "Name": "Vertical",
+            "ControlType": "ScrollBar",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "RangeValue",
+              "LegacyIAccessible"
+            ],
+            "Children": [
+              {
+                "AutomationId": "UpButton",
+                "Name": "Line up",
+                "ControlType": "Button",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "ScrollbarThumb",
+                "Name": "Position",
+                "ControlType": "Thumb",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "DownPageButton",
+                "Name": "Page down",
+                "ControlType": "Button",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              },
+              {
+                "AutomationId": "DownButton",
+                "Name": "Line down",
+                "ControlType": "Button",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "Invoke",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "AutomationId": "statusStrip1",
+        "Name": null,
+        "ControlType": "StatusBar",
+        "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 591654,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": null,
+            "Name": "Ready.",
+            "ControlType": "Text",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "Records: 8",
+            "ControlType": "Text",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": "toolStrip1",
+        "Name": null,
+        "ControlType": "ToolBar",
+        "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 526354,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": null,
+            "Name": "Grip",
+            "ControlType": "Thumb",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "New",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "Save",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "Delete",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "Refresh",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": "menuStrip1",
+        "Name": null,
+        "ControlType": "MenuBar",
+        "ClassName": "WindowsForms10.Window.8.app.0.141b42a_r7_ad1",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 263954,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": null,
+            "Name": "File",
+            "ControlType": "MenuItem",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "ExpandCollapse",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "Edit",
+            "ControlType": "MenuItem",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "ExpandCollapse",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "View",
+            "ControlType": "MenuItem",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "ExpandCollapse",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": null,
+            "Name": "Help",
+            "ControlType": "MenuItem",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "ExpandCollapse",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": "TitleBar",
+        "Name": null,
+        "ControlType": "TitleBar",
+        "ClassName": null,
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Value",
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": "SystemMenuBar",
+            "Name": "System",
+            "ControlType": "MenuBar",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": [
+              {
+                "AutomationId": null,
+                "Name": "System",
+                "ControlType": "MenuItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "ExpandCollapse",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              }
+            ]
+          },
+          {
+            "AutomationId": "Minimize-Restore",
+            "Name": "Minimize",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "Maximize-Restore",
+            "Name": "Maximize",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "Close",
+            "Name": "Close",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      }
+    ]
+  }
+}

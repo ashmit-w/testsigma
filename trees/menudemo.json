@@ -1,0 +1,587 @@
+{
+  "processName": "MenuDemo",
+  "dumpedAt": "2026-08-13T18:55:22.0493834Z",
+  "root": {
+    "AutomationId": null,
+    "Name": "MenuDemo",
+    "ControlType": "Window",
+    "ClassName": "Window",
+    "IsEnabled": true,
+    "IsOffscreen": false,
+    "NativeWindowHandle": 393462,
+    "Patterns": [
+      "Window",
+      "Transform",
+      "LegacyIAccessible"
+    ],
+    "Children": [
+      {
+        "AutomationId": "TitleBar",
+        "Name": null,
+        "ControlType": "TitleBar",
+        "ClassName": null,
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Value",
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": "SystemMenuBar",
+            "Name": "System",
+            "ControlType": "MenuBar",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": [
+              {
+                "AutomationId": null,
+                "Name": "System",
+                "ControlType": "MenuItem",
+                "ClassName": null,
+                "IsEnabled": true,
+                "IsOffscreen": false,
+                "NativeWindowHandle": 0,
+                "Patterns": [
+                  "ExpandCollapse",
+                  "LegacyIAccessible"
+                ],
+                "Children": []
+              }
+            ]
+          },
+          {
+            "AutomationId": "Minimize-Restore",
+            "Name": "Minimize",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "Maximize-Restore",
+            "Name": "Maximize",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          },
+          {
+            "AutomationId": "Close",
+            "Name": "Close",
+            "ControlType": "Button",
+            "ClassName": null,
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "Invoke",
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": "breadcrumb",
+        "Name": "main menu",
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": null,
+        "Name": "Main Menu",
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_start",
+        "Name": "Start",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": null,
+            "Name": "Start",
+            "ControlType": "Text",
+            "ClassName": "TextBlock",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": "btn_options",
+        "Name": "Options",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": null,
+            "Name": "Options",
+            "ControlType": "Text",
+            "ClassName": "TextBlock",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": "btn_settings",
+        "Name": "Settings",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": null,
+            "Name": "Settings",
+            "ControlType": "Text",
+            "ClassName": "TextBlock",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": "btn_videoShortcut",
+        "Name": "Video (Quick Access)",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": [
+          {
+            "AutomationId": null,
+            "Name": "Video (Quick Access)",
+            "ControlType": "Text",
+            "ClassName": "TextBlock",
+            "IsEnabled": true,
+            "IsOffscreen": false,
+            "NativeWindowHandle": 0,
+            "Patterns": [
+              "LegacyIAccessible"
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "AutomationId": null,
+        "Name": "Start",
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "backButton_start",
+        "Name": "\u003C Back",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_newGame",
+        "Name": "New Game",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_loadGame",
+        "Name": "Load Game",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_tutorial",
+        "Name": "Tutorial",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": null,
+        "Name": "Options",
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "backButton_options",
+        "Name": "\u003C Back",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_audio",
+        "Name": "Audio",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_video",
+        "Name": "Video",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_controls",
+        "Name": "Controls",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": null,
+        "Name": "Settings",
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "backButton_settings",
+        "Name": "\u003C Back",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_account",
+        "Name": "Account",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_notifications",
+        "Name": "Notifications",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_about",
+        "Name": "About",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": null,
+        "Name": "Audio",
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "backButton_audio",
+        "Name": "\u003C Back",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_masterVolume",
+        "Name": "Master Volume",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_music",
+        "Name": "Music",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_effects",
+        "Name": "Effects",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": null,
+        "Name": "Video",
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "backButton_video",
+        "Name": "\u003C Back",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_resolution",
+        "Name": "Resolution",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "btn_fullscreen",
+        "Name": "Fullscreen",
+        "ControlType": "Button",
+        "ClassName": "Button",
+        "IsEnabled": true,
+        "IsOffscreen": true,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "Invoke",
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      },
+      {
+        "AutomationId": "statusText",
+        "Name": null,
+        "ControlType": "Text",
+        "ClassName": "TextBlock",
+        "IsEnabled": true,
+        "IsOffscreen": false,
+        "NativeWindowHandle": 0,
+        "Patterns": [
+          "LegacyIAccessible"
+        ],
+        "Children": []
+      }
+    ]
+  }
+}
