@@ -34,6 +34,8 @@ public sealed class AppSession : IDisposable
 
     public Task<ModelDocument> CurrentAsync() => thread.InvokeAsync(Current);
 
+    public Task<int?> CurrentProcessIdAsync() => thread.InvokeAsync(() => app?.ProcessId);
+
     private ModelDocument Start(string exePath)
     {
         this.exePath = exePath;
@@ -80,10 +82,7 @@ public sealed class AppSession : IDisposable
             }
 
             var stopwatch = Stopwatch.StartNew();
-            var element = Waits.Poll(
-                () => ResolveTarget(step) is { } e && IsReady(e) ? e : null,
-                Waits.DefaultTimeout);
-            var result = interactionResolver.Execute(element, step.Action);
+            var result = ExecuteStep(step);
             stopwatch.Stop();
 
             results.Add(new StepResult
@@ -114,6 +113,54 @@ public sealed class AppSession : IDisposable
     {
         EnsureStarted();
         return currentModel!;
+    }
+
+    private InteractionResult ExecuteStep(FlowStep step)
+    {
+        if (step.Assert != null)
+        {
+            return ExecuteAssert(step);
+        }
+
+        if (step.Action != null)
+        {
+            var element = Waits.Poll(
+                () => ResolveTarget(step) is { } e && IsReady(e) ? e : null,
+                Waits.DefaultTimeout);
+            return interactionResolver.Execute(element, step.Action);
+        }
+
+        return new InteractionResult
+        {
+            Mechanism = "None",
+            Confidence = 0,
+            Success = false,
+            FailureCause = FailureCause.NoMechanismSucceeded,
+        };
+    }
+
+    private InteractionResult ExecuteAssert(FlowStep step)
+    {
+        var spec = step.Assert!;
+
+        if (spec.Kind == AssertKind.Exists)
+        {
+            var found = Waits.Poll(() => ResolveTarget(step), Waits.DefaultTimeout);
+            return found != null
+                ? new InteractionResult { Mechanism = "UiaProperty", Confidence = 3, Success = true }
+                : new InteractionResult { Mechanism = "UiaProperty", Confidence = 3, Success = false, FailureCause = FailureCause.NotFound };
+        }
+
+        if (spec.Kind == AssertKind.NotExists)
+        {
+            var absent = Waits.Poll<object>(
+                () => ResolveTarget(step) == null ? new object() : null,
+                Waits.DefaultTimeout) != null;
+            return new InteractionResult { Mechanism = "UiaProperty", Confidence = 3, Success = absent };
+        }
+
+        var element = Waits.Poll(() => ResolveTarget(step), Waits.DefaultTimeout);
+        return AssertionExecutor.Execute(element, spec, interactionResolver);
     }
 
     /// <summary>AutomationId first, structural path as fallback (see FlowStep).</summary>

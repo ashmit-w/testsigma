@@ -12,31 +12,6 @@ export interface CoverageReport {
   unexplored: UnexploredContainer[];
 }
 
-export interface ModelElement {
-  id: string;
-  automationId: string | null;
-  name: string | null;
-  controlType: string;
-  path: string[];
-  nativeHandle: number;
-  patterns: string[];
-  defaultAction: string | null;
-  mechanism: string | null;
-  confidence: number | null;
-  constraints: { minimum: number; maximum: number; step: number } | null;
-  isEnabled: boolean;
-}
-
-export interface ModelDocument {
-  schemaVersion: number;
-  appId: string;
-  appTitle: string;
-  processName: string;
-  builtAt: string;
-  elements: ModelElement[];
-  coverage: CoverageReport;
-}
-
 export interface PuppetBlockMeta {
   elementId: string;
   automationId: string | null;
@@ -83,12 +58,14 @@ export interface PaletteDocument {
   toolbox: PaletteToolbox;
 }
 
-export type StepStatus = "Passed" | "Failed" | "Skipped";
+// Puppet.Host serialises StepStatus with a camelCase string enum
+// converter, so these come over the wire lowercase.
+export type StepStatus = "passed" | "failed" | "skipped";
 
 export interface StepResult {
   description: string;
   status: StepStatus;
-  duration: string;
+  durationMs: number;
   mechanism: string | null;
   confidence: number | null;
   failureCause: string | null;
@@ -97,17 +74,21 @@ export interface StepResult {
 
 export interface StartResponse {
   palette: PaletteDocument;
-  model: ModelDocument;
+  coverage: CoverageReport;
+  processId: number | null;
 }
 
 export interface ResetResponse {
   palette: PaletteDocument;
-  model: ModelDocument;
+  coverage: CoverageReport;
+  processId: number | null;
 }
 
 export interface RunResponse {
   stepResults: StepResult[];
   palette: PaletteDocument;
+  coverage: CoverageReport;
+  processId: number | null;
 }
 
 // What the client sends to POST /session/run: the workspace flow,

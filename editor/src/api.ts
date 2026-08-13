@@ -16,7 +16,7 @@ async function postJson<TResponse>(url: string, body?: unknown): Promise<TRespon
 }
 
 export const api = {
-  start: () => postJson<StartResponse>("/session/start"),
+  start: (exePath: string) => postJson<StartResponse>("/session/start", { exePath }),
   reset: () => postJson<ResetResponse>("/session/reset"),
   run: (request: RunRequest) => postJson<RunResponse>("/session/run", request),
 };

@@ -56,7 +56,7 @@ public static class BlockGenerator
                 clear: true));
 
             blocks.Add(Build(element, "expect_text", "expect %1 has text %2",
-                [TargetArg(element), TextField("TEXT", "")], Colour.Value, "GetValue", assertKind: "TextEquals"));
+                [TargetArg(element), TextField("TEXT", "")], Colour.Value, "AssertTextEquals", assertKind: "TextEquals"));
         }
 
         if (element.Patterns.Contains("Toggle"))
@@ -68,7 +68,7 @@ public static class BlockGenerator
                 "Toggle", targetState: false));
 
             blocks.Add(Build(element, "expect_checked", "expect %1 is checked", TargetArgs(element), Colour.Toggle,
-                "GetToggleState", assertKind: "IsChecked"));
+                "AssertChecked", assertKind: "IsChecked"));
         }
 
         if (element.Patterns.Contains("RangeValue") && element.Constraints is { } constraints)

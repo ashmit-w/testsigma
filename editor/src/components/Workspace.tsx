@@ -1,12 +1,22 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import * as Blockly from "blockly";
-import type { PaletteDocument, PuppetBlockMeta, FlowStepRequest } from "../types";
+import type { PaletteDocument, PuppetBlockMeta, FlowStepRequest, StepResult } from "../types";
 import { registerPaletteBlocks, toBlocklyToolbox } from "../blockly/registerBlocks";
-import { serializeFlow } from "../blockly/serializeFlow";
+import { serializeFlow, walkExecutableBlocks } from "../blockly/serializeFlow";
+
+const PASSED_COLOUR = "#2e7d32";
+const FAILED_COLOUR = "#c62828";
+const STEP_ANIMATION_MS = 200;
 
 export interface WorkspaceHandle {
   serializeFlow: () => FlowStepRequest[];
+  /** RV-1: highlight the block about to run, before its result is known. */
+  highlightRunStart: () => void;
+  /** RV-1: walk stepResults against the same block order, colouring each green/red as its result "arrives". */
+  playResults: (results: StepResult[]) => Promise<void>;
 }
+
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
  * Hosts the single Blockly instance: an always-open flyout (the palette)
@@ -63,6 +73,38 @@ export const Workspace = forwardRef<WorkspaceHandle, { palette: PaletteDocument 
         }
 
         return serializeFlow(workspace, metaByTypeRef.current);
+      },
+
+      highlightRunStart: () => {
+        const workspace = workspaceRef.current;
+        if (!workspace) {
+          return;
+        }
+
+        const [first] = walkExecutableBlocks(workspace, metaByTypeRef.current);
+        workspace.highlightBlock(first?.id ?? null);
+      },
+
+      playResults: async (results) => {
+        const workspace = workspaceRef.current;
+        if (!workspace) {
+          return;
+        }
+
+        const blocks = walkExecutableBlocks(workspace, metaByTypeRef.current);
+        for (let i = 0; i < blocks.length && i < results.length; i++) {
+          const block = blocks[i];
+          workspace.highlightBlock(block.id);
+          await delay(STEP_ANIMATION_MS);
+
+          if (results[i].status === "passed") {
+            block.setColour(PASSED_COLOUR);
+          } else if (results[i].status === "failed") {
+            block.setColour(FAILED_COLOUR);
+          }
+        }
+
+        workspace.highlightBlock(null);
       },
     }));
 
