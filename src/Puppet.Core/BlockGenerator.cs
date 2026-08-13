@@ -31,6 +31,7 @@ public static class BlockGenerator
             AppId = model.AppId,
             AppTitle = model.AppTitle,
             ModelBuiltAt = model.BuiltAt,
+            Coverage = model.Coverage,
             Blocks = blocks,
             Toolbox = new PaletteToolbox
             {

@@ -10,6 +10,7 @@ public sealed record PaletteDocument
     public required string AppId { get; init; }
     public required string AppTitle { get; init; }
     public DateTime ModelBuiltAt { get; init; }
+    public required CoverageReport Coverage { get; init; }
     public List<PaletteBlock> Blocks { get; init; } = [];
     public required PaletteToolbox Toolbox { get; init; }
 }
