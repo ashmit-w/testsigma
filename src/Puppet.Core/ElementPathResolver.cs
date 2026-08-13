@@ -9,6 +9,10 @@ namespace Puppet.Core;
 /// </summary>
 public static class ElementPathResolver
 {
+    /// <summary>Finds a descendant by AutomationId. Live UIA search, so this is the preferred locator when present.</summary>
+    public static AutomationElement? ResolveByAutomationId(AutomationElement root, string automationId) =>
+        root.FindFirstDescendant(cf => cf.ByAutomationId(automationId));
+
     public static AutomationElement? Resolve(AutomationElement root, IReadOnlyList<string> path)
     {
         var current = root;

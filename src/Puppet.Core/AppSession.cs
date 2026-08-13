@@ -81,7 +81,7 @@ public sealed class AppSession : IDisposable
 
             var stopwatch = Stopwatch.StartNew();
             var element = Waits.Poll(
-                () => ElementPathResolver.Resolve(mainWindow!, step.TargetPath) is { } e && IsReady(e) ? e : null,
+                () => ResolveTarget(step) is { } e && IsReady(e) ? e : null,
                 Waits.DefaultTimeout);
             var result = interactionResolver.Execute(element, step.Action);
             stopwatch.Stop();
@@ -114,6 +114,21 @@ public sealed class AppSession : IDisposable
     {
         EnsureStarted();
         return currentModel!;
+    }
+
+    /// <summary>AutomationId first, structural path as fallback (see FlowStep).</summary>
+    private AutomationElement? ResolveTarget(FlowStep step)
+    {
+        if (!string.IsNullOrEmpty(step.AutomationId))
+        {
+            var byAutomationId = ElementPathResolver.ResolveByAutomationId(mainWindow!, step.AutomationId);
+            if (byAutomationId != null)
+            {
+                return byAutomationId;
+            }
+        }
+
+        return ElementPathResolver.Resolve(mainWindow!, step.TargetPath);
     }
 
     private static bool IsReady(AutomationElement element) => element.Properties.IsEnabled.ValueOrDefault;

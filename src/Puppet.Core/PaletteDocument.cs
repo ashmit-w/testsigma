@@ -28,11 +28,19 @@ public sealed record PaletteBlock
     public required PuppetBlockMeta Puppet { get; init; }
 }
 
-/// <summary>Non-Blockly metadata: which element and action a block maps to, for the Test Runner.</summary>
+/// <summary>
+/// Non-Blockly metadata: which element and action a block maps to, for
+/// the Test Runner. AutomationId and Path make the block a self-contained
+/// locator - replay resolves against the live tree at execution time, not
+/// through a model lookup, so the block must carry everything needed to
+/// find its element itself.
+/// </summary>
 public sealed record PuppetBlockMeta
 {
     public required string ElementId { get; init; }
+    public string? AutomationId { get; init; }
     public required string ControlType { get; init; }
+    public required List<string> Path { get; init; }
     public required string Action { get; init; }
     public string? AssertKind { get; init; }
     public bool? TargetState { get; init; }

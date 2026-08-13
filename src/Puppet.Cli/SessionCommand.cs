@@ -82,7 +82,13 @@ public static class SessionCommand
 
             var flow = new Flow
             {
-                Steps = [new FlowStep { Description = line, TargetPath = target.Path, Action = new ActionArgs { Kind = action } }],
+                Steps = [new FlowStep
+                {
+                    Description = line,
+                    AutomationId = target.AutomationId,
+                    TargetPath = target.Path,
+                    Action = new ActionArgs { Kind = action },
+                }],
             };
 
             var replay = await session.ReplayAsync(flow);

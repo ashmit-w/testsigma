@@ -139,7 +139,9 @@ public static class BlockGenerator
             Puppet = new PuppetBlockMeta
             {
                 ElementId = element.Id,
+                AutomationId = element.AutomationId,
                 ControlType = element.ControlType,
+                Path = element.Path,
                 Action = action,
                 AssertKind = assertKind,
                 TargetState = targetState,

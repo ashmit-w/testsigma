@@ -60,6 +60,9 @@ function toFlowStep(block: Blockly.Block, metaByType: Map<string, PuppetBlockMet
   return {
     description: describe(block),
     elementId: meta.elementId,
+    automationId: meta.automationId,
+    controlType: meta.controlType,
+    path: meta.path,
     action: meta.action,
     args,
   };

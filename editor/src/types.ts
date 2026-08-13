@@ -39,7 +39,9 @@ export interface ModelDocument {
 
 export interface PuppetBlockMeta {
   elementId: string;
+  automationId: string | null;
   controlType: string;
+  path: string[];
   action: string;
   assertKind: string | null;
   targetState: boolean | null;
@@ -109,10 +111,16 @@ export interface RunResponse {
 }
 
 // What the client sends to POST /session/run: the workspace flow,
-// serialised as one entry per statement block, in execution order.
+// serialised as one entry per statement block, in execution order. Each
+// step carries its own locator (automationId, falling back to path) taken
+// straight from the block's puppet metadata, since resolution happens
+// against the live tree at execution time - never through a model lookup.
 export interface FlowStepRequest {
   description: string;
   elementId: string;
+  automationId: string | null;
+  controlType: string;
+  path: string[];
   action: string;
   args: {
     text?: string;
