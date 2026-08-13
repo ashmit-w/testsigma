@@ -1,0 +1,164 @@
+<Window x:Class="ControlZoo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ControlZoo"
+        Height="720" Width="560"
+        ResizeMode="CanResize">
+    <Window.Resources>
+        <Style TargetType="TextBlock" x:Key="SectionLabel">
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Margin" Value="0,14,0,4"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" Padding="16">
+            <StackPanel>
+                <TextBlock Text="ControlZoo - one of every common control" FontSize="18" FontWeight="Bold" Margin="0,0,0,8"/>
+
+                <TextBlock Text="TextBox:" Style="{StaticResource SectionLabel}"/>
+                <TextBox x:Name="textBoxSingleLine" AutomationProperties.AutomationId="textBoxSingleLine"
+                         TextChanged="TextBoxSingleLine_TextChanged"/>
+
+                <TextBlock Text="PasswordBox:" Style="{StaticResource SectionLabel}"/>
+                <PasswordBox x:Name="passwordBoxDemo" AutomationProperties.AutomationId="passwordBox"
+                             PasswordChanged="PasswordBoxDemo_PasswordChanged"/>
+
+                <TextBlock Text="Multiline TextBox:" Style="{StaticResource SectionLabel}"/>
+                <TextBox x:Name="textBoxMultiline" AutomationProperties.AutomationId="textBoxMultiline"
+                         Height="80" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"
+                         TextChanged="TextBoxMultiline_TextChanged"/>
+
+                <TextBlock Text="CheckBox:" Style="{StaticResource SectionLabel}"/>
+                <CheckBox x:Name="checkBoxAgree" AutomationProperties.AutomationId="checkBoxAgree" Content="I agree"
+                          Checked="CheckBoxAgree_Changed" Unchecked="CheckBoxAgree_Changed"/>
+
+                <TextBlock Text="RadioButtons:" Style="{StaticResource SectionLabel}"/>
+                <StackPanel Orientation="Horizontal">
+                    <RadioButton x:Name="radioOptionA" AutomationProperties.AutomationId="radioOptionA"
+                                 GroupName="radioGroup1" Content="Option A" Margin="0,0,12,0"
+                                 Checked="RadioOption_Checked"/>
+                    <RadioButton x:Name="radioOptionB" AutomationProperties.AutomationId="radioOptionB"
+                                 GroupName="radioGroup1" Content="Option B" Margin="0,0,12,0"
+                                 Checked="RadioOption_Checked"/>
+                    <RadioButton x:Name="radioOptionC" AutomationProperties.AutomationId="radioOptionC"
+                                 GroupName="radioGroup1" Content="Option C"
+                                 Checked="RadioOption_Checked"/>
+                </StackPanel>
+
+                <TextBlock Text="ComboBox:" Style="{StaticResource SectionLabel}"/>
+                <ComboBox x:Name="comboBoxFive" AutomationProperties.AutomationId="comboBoxFive"
+                          SelectionChanged="ComboBoxFive_SelectionChanged">
+                    <ComboBoxItem Content="Alpha"/>
+                    <ComboBoxItem Content="Beta"/>
+                    <ComboBoxItem Content="Gamma"/>
+                    <ComboBoxItem Content="Delta"/>
+                    <ComboBoxItem Content="Epsilon"/>
+                </ComboBox>
+
+                <TextBlock Text="Editable ComboBox:" Style="{StaticResource SectionLabel}"/>
+                <ComboBox x:Name="comboBoxEditable" AutomationProperties.AutomationId="comboBoxEditable"
+                          IsEditable="True" SelectionChanged="ComboBoxEditable_SelectionChanged">
+                    <ComboBoxItem Content="Red"/>
+                    <ComboBoxItem Content="Green"/>
+                    <ComboBoxItem Content="Blue"/>
+                </ComboBox>
+
+                <TextBlock Text="ListBox (single select):" Style="{StaticResource SectionLabel}"/>
+                <ListBox x:Name="listBoxSingleSelect" AutomationProperties.AutomationId="listBoxSingleSelect"
+                         Height="110" SelectionMode="Single" SelectionChanged="ListBoxSingleSelect_SelectionChanged">
+                    <ListBoxItem Content="Item 1"/>
+                    <ListBoxItem Content="Item 2"/>
+                    <ListBoxItem Content="Item 3"/>
+                    <ListBoxItem Content="Item 4"/>
+                    <ListBoxItem Content="Item 5"/>
+                    <ListBoxItem Content="Item 6"/>
+                </ListBox>
+
+                <TextBlock Text="ListBox (multi select):" Style="{StaticResource SectionLabel}"/>
+                <ListBox x:Name="listBoxMultiSelect" AutomationProperties.AutomationId="listBoxMultiSelect"
+                         Height="110" SelectionMode="Extended" SelectionChanged="ListBoxMultiSelect_SelectionChanged">
+                    <ListBoxItem Content="Item A"/>
+                    <ListBoxItem Content="Item B"/>
+                    <ListBoxItem Content="Item C"/>
+                    <ListBoxItem Content="Item D"/>
+                    <ListBoxItem Content="Item E"/>
+                    <ListBoxItem Content="Item F"/>
+                </ListBox>
+
+                <TextBlock Text="Slider (Minimum 0, Maximum 100):" Style="{StaticResource SectionLabel}"/>
+                <Slider x:Name="sliderVolume" AutomationProperties.AutomationId="sliderVolume"
+                        Minimum="0" Maximum="100" Value="50" TickFrequency="10" IsSnapToTickEnabled="False"
+                        ValueChanged="SliderVolume_ValueChanged"/>
+
+                <TextBlock Text="Slider (Minimum 1, Maximum 16):" Style="{StaticResource SectionLabel}"/>
+                <Slider x:Name="sliderThreads" AutomationProperties.AutomationId="sliderThreads"
+                        Minimum="1" Maximum="16" Value="4" TickFrequency="1" IsSnapToTickEnabled="True"
+                        ValueChanged="SliderThreads_ValueChanged"/>
+
+                <TextBlock Text="ProgressBar:" Style="{StaticResource SectionLabel}"/>
+                <ProgressBar x:Name="progressBarDemo" AutomationProperties.AutomationId="progressBarDemo"
+                             Height="20" Minimum="0" Maximum="100" Value="45"/>
+
+                <TextBlock Text="ToggleButton:" Style="{StaticResource SectionLabel}"/>
+                <ToggleButton x:Name="toggleButtonDemo" AutomationProperties.AutomationId="toggleButtonDemo"
+                              Content="Toggle" Width="100" HorizontalAlignment="Left"
+                              Checked="ToggleButtonDemo_Changed" Unchecked="ToggleButtonDemo_Changed"/>
+
+                <TextBlock Text="TreeView:" Style="{StaticResource SectionLabel}"/>
+                <TreeView x:Name="treeViewDemo" AutomationProperties.AutomationId="treeViewDemo"
+                          Height="140" SelectedItemChanged="TreeViewDemo_SelectedItemChanged">
+                    <TreeViewItem Header="Fruits">
+                        <TreeViewItem Header="Apple"/>
+                        <TreeViewItem Header="Banana"/>
+                        <TreeViewItem Header="Cherry"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Vegetables">
+                        <TreeViewItem Header="Carrot"/>
+                        <TreeViewItem Header="Potato"/>
+                    </TreeViewItem>
+                    <TreeViewItem Header="Grains">
+                        <TreeViewItem Header="Rice"/>
+                        <TreeViewItem Header="Wheat"/>
+                        <TreeViewItem Header="Oats"/>
+                    </TreeViewItem>
+                </TreeView>
+
+                <TextBlock Text="TabControl:" Style="{StaticResource SectionLabel}"/>
+                <TabControl x:Name="tabControlDemo" AutomationProperties.AutomationId="tabControlDemo"
+                            Height="90" SelectionChanged="TabControlDemo_SelectionChanged">
+                    <TabItem Header="Tab 1">
+                        <TextBlock Text="Content of Tab 1" Margin="8"/>
+                    </TabItem>
+                    <TabItem Header="Tab 2">
+                        <TextBlock Text="Content of Tab 2" Margin="8"/>
+                    </TabItem>
+                    <TabItem Header="Tab 3">
+                        <TextBlock Text="Content of Tab 3" Margin="8"/>
+                    </TabItem>
+                </TabControl>
+
+                <TextBlock Text="DatePicker:" Style="{StaticResource SectionLabel}"/>
+                <DatePicker x:Name="datePickerDemo" AutomationProperties.AutomationId="datePickerDemo"
+                            HorizontalAlignment="Left" SelectedDateChanged="DatePickerDemo_SelectedDateChanged"/>
+
+                <TextBlock Text="Button:" Style="{StaticResource SectionLabel}"/>
+                <Button x:Name="buttonDemo" AutomationProperties.AutomationId="buttonDemo"
+                        Content="Click Me" Width="120" HorizontalAlignment="Left" Padding="6"
+                        Click="ButtonDemo_Click"/>
+
+                <Border Height="16"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <Border Grid.Row="1" Background="#EFEFEF" BorderBrush="#CCCCCC" BorderThickness="0,1,0,0">
+            <TextBlock x:Name="statusText" AutomationProperties.AutomationId="statusText"
+                       Text="Ready." Margin="12,8" FontSize="13"/>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,4 @@
+# Build output - only source code is tracked
+dist/
+bin/
+obj/

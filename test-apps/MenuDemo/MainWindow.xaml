@@ -1,0 +1,95 @@
+<Window x:Class="MenuDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MenuDemo"
+        Height="480" Width="640"
+        Background="#1E1E1E"
+        ResizeMode="CanResize">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#333333"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="#555555"/>
+            <Setter Property="Padding" Value="10,6"/>
+            <Setter Property="Margin" Value="0,6"/>
+            <Setter Property="MinWidth" Value="200"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="breadcrumb"
+                   Grid.Row="0"
+                   AutomationProperties.AutomationId="breadcrumb"
+                   Text="main menu"
+                   FontSize="14"
+                   Foreground="#AAAAAA"
+                   Margin="12,10"/>
+
+        <Grid Grid.Row="1" Margin="12">
+            <StackPanel x:Name="panel_main" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="Main Menu" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+                <Button x:Name="btn_start" Content="Start" AutomationProperties.AutomationId="btn_start" Click="BtnStart_Click"/>
+                <Button x:Name="btn_options" Content="Options" AutomationProperties.AutomationId="btn_options" Click="BtnOptions_Click"/>
+                <Button x:Name="btn_settings" Content="Settings" AutomationProperties.AutomationId="btn_settings" Click="BtnSettings_Click"/>
+                <Button x:Name="btn_videoShortcut" Content="Video (Quick Access)" AutomationProperties.AutomationId="btn_videoShortcut" Click="BtnVideoShortcut_Click"/>
+            </StackPanel>
+
+            <StackPanel x:Name="panel_start" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+                <TextBlock Text="Start" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+                <Button x:Name="backButton_start" Content="&lt; Back" AutomationProperties.AutomationId="backButton_start" Click="BackButton_Click"/>
+                <Button x:Name="btn_newGame" Content="New Game" AutomationProperties.AutomationId="btn_newGame" Click="LeafButton_Click" Tag="new game"/>
+                <Button x:Name="btn_loadGame" Content="Load Game" AutomationProperties.AutomationId="btn_loadGame" Click="LeafButton_Click" Tag="load game"/>
+                <Button x:Name="btn_tutorial" Content="Tutorial" AutomationProperties.AutomationId="btn_tutorial" Click="LeafButton_Click" Tag="tutorial"/>
+            </StackPanel>
+
+            <StackPanel x:Name="panel_options" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+                <TextBlock Text="Options" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+                <Button x:Name="backButton_options" Content="&lt; Back" AutomationProperties.AutomationId="backButton_options" Click="BackButton_Click"/>
+                <Button x:Name="btn_audio" Content="Audio" AutomationProperties.AutomationId="btn_audio" Click="BtnAudio_Click"/>
+                <Button x:Name="btn_video" Content="Video" AutomationProperties.AutomationId="btn_video" Click="BtnVideo_Click"/>
+                <Button x:Name="btn_controls" Content="Controls" AutomationProperties.AutomationId="btn_controls" Click="LeafButton_Click" Tag="controls"/>
+            </StackPanel>
+
+            <StackPanel x:Name="panel_settings" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+                <TextBlock Text="Settings" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+                <Button x:Name="backButton_settings" Content="&lt; Back" AutomationProperties.AutomationId="backButton_settings" Click="BackButton_Click"/>
+                <Button x:Name="btn_account" Content="Account" AutomationProperties.AutomationId="btn_account" Click="LeafButton_Click" Tag="account"/>
+                <Button x:Name="btn_notifications" Content="Notifications" AutomationProperties.AutomationId="btn_notifications" Click="LeafButton_Click" Tag="notifications"/>
+                <Button x:Name="btn_about" Content="About" AutomationProperties.AutomationId="btn_about" Click="LeafButton_Click" Tag="about"/>
+            </StackPanel>
+
+            <StackPanel x:Name="panel_audio" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+                <TextBlock Text="Audio" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+                <Button x:Name="backButton_audio" Content="&lt; Back" AutomationProperties.AutomationId="backButton_audio" Click="BackButton_Click"/>
+                <Button x:Name="btn_masterVolume" Content="Master Volume" AutomationProperties.AutomationId="btn_masterVolume" Click="LeafButton_Click" Tag="master volume"/>
+                <Button x:Name="btn_music" Content="Music" AutomationProperties.AutomationId="btn_music" Click="LeafButton_Click" Tag="music"/>
+                <Button x:Name="btn_effects" Content="Effects" AutomationProperties.AutomationId="btn_effects" Click="LeafButton_Click" Tag="effects"/>
+            </StackPanel>
+
+            <StackPanel x:Name="panel_video" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed">
+                <TextBlock Text="Video" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,16"/>
+                <Button x:Name="backButton_video" Content="&lt; Back" AutomationProperties.AutomationId="backButton_video" Click="BackButton_Click"/>
+                <Button x:Name="btn_resolution" Content="Resolution" AutomationProperties.AutomationId="btn_resolution" Click="LeafButton_Click" Tag="resolution"/>
+                <Button x:Name="btn_fullscreen" Content="Fullscreen" AutomationProperties.AutomationId="btn_fullscreen" Click="LeafButton_Click" Tag="fullscreen"/>
+            </StackPanel>
+        </Grid>
+
+        <TextBlock x:Name="statusText"
+                   Grid.Row="2"
+                   AutomationProperties.AutomationId="statusText"
+                   Text=""
+                   FontSize="13"
+                   Margin="12,6,12,12"
+                   HorizontalAlignment="Center"/>
+    </Grid>
+</Window>

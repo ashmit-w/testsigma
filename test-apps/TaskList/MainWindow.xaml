@@ -1,0 +1,32 @@
+<Window x:Class="TaskListApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TaskList"
+        Height="420" Width="380"
+        ResizeMode="CanResize">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0" Margin="0,0,0,8">
+            <Button x:Name="buttonAdd" AutomationProperties.AutomationId="buttonAdd"
+                    Content="Add" Width="60" DockPanel.Dock="Right" Click="ButtonAdd_Click"/>
+            <TextBox x:Name="textBoxNewTask" AutomationProperties.AutomationId="textBoxNewTask"
+                     Margin="0,0,8,0" VerticalContentAlignment="Center"/>
+        </DockPanel>
+
+        <ListBox x:Name="listBoxTasks" AutomationProperties.AutomationId="listBoxTasks"
+                 Grid.Row="1" SelectionMode="Extended"/>
+
+        <Button x:Name="buttonDeleteSelected" AutomationProperties.AutomationId="buttonDeleteSelected"
+                Grid.Row="2" Content="Delete Selected" Margin="0,8,0,8" Padding="6"
+                Click="ButtonDeleteSelected_Click"/>
+
+        <TextBlock x:Name="textBlockSummary" AutomationProperties.AutomationId="textBlockSummary"
+                   Grid.Row="3" FontWeight="Bold"/>
+    </Grid>
+</Window>
