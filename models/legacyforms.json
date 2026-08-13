@@ -1,0 +1,1631 @@
+{
+  "schemaVersion": 1,
+  "appId": "legacyforms",
+  "appTitle": "LegacyForms",
+  "processName": "LegacyForms",
+  "builtAt": "2026-08-13T20:21:41.9765377Z",
+  "elements": [
+    {
+      "id": "el_4264d0fa4c9835ec",
+      "automationId": "MainForm",
+      "name": "LegacyForms",
+      "controlType": "Window",
+      "path": [
+        "Window"
+      ],
+      "nativeHandle": 2622708,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_af3c700ef1ac8b11",
+      "automationId": "contentPanel",
+      "name": null,
+      "controlType": "Pane",
+      "path": [
+        "Window",
+        "Pane"
+      ],
+      "nativeHandle": 1180076,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_e36c0aec04e55147",
+      "automationId": "groupBox1",
+      "name": "Employee Details",
+      "controlType": "Group",
+      "path": [
+        "Window",
+        "Pane",
+        "Group"
+      ],
+      "nativeHandle": 526130,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_6088b086a8d02765",
+      "automationId": "label1",
+      "name": "Name:",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Text[1]"
+      ],
+      "nativeHandle": 657204,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_a9b84ce4a1d7fc6a",
+      "automationId": "textBox1",
+      "name": "Name:",
+      "controlType": "Edit",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Edit[1]"
+      ],
+      "nativeHandle": 591296,
+      "patterns": [
+        "Value",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_cde8be4f29b99561",
+      "automationId": "label2",
+      "name": "Employee ID:",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Text[2]"
+      ],
+      "nativeHandle": 1378054,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_dcb31d74c1fc3ecf",
+      "automationId": "textBox2",
+      "name": "Employee ID:",
+      "controlType": "Edit",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Edit[2]"
+      ],
+      "nativeHandle": 1378082,
+      "patterns": [
+        "Value",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_aac01911e82d6c3b",
+      "automationId": "label3",
+      "name": "Department:",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Text[3]"
+      ],
+      "nativeHandle": 1115532,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_d71cdd03fc799efc",
+      "automationId": "textBox3",
+      "name": "Department:",
+      "controlType": "Edit",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Edit[3]"
+      ],
+      "nativeHandle": 5572296,
+      "patterns": [
+        "Value",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_5ac2f492c9a926d9",
+      "automationId": "label4",
+      "name": "Status:",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Text[4]"
+      ],
+      "nativeHandle": 1115812,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_2c3ea7bb6c59a814",
+      "automationId": "comboBox1",
+      "name": "Status:",
+      "controlType": "ComboBox",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "ComboBox[1]"
+      ],
+      "nativeHandle": 3343622,
+      "patterns": [
+        "Value",
+        "ExpandCollapse",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_c838ef9fbcb6adc7",
+      "automationId": null,
+      "name": "Status:",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "ComboBox[1]",
+        "Text"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_75fc4ad26951190c",
+      "automationId": null,
+      "name": "Open",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "ComboBox[1]",
+        "Button"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_1b6260ce25d1e103",
+      "automationId": "label5",
+      "name": "Join Date:",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Text[5]"
+      ],
+      "nativeHandle": 1770818,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_29ec1d9a53589c7d",
+      "automationId": "dateTimePicker1",
+      "name": "Join Date:",
+      "controlType": "ComboBox",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "ComboBox[2]"
+      ],
+      "nativeHandle": 1574344,
+      "patterns": [
+        "Value",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_0c9dcaf3a5f7d7a4",
+      "automationId": "checkBox1",
+      "name": "Full Time",
+      "controlType": "CheckBox",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "CheckBox"
+      ],
+      "nativeHandle": 2557720,
+      "patterns": [
+        "Invoke",
+        "Toggle",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_10cf5be585b4b58d",
+      "automationId": "groupBox2",
+      "name": "Shift",
+      "controlType": "Group",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Group"
+      ],
+      "nativeHandle": 657174,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_802c686ce429d4c6",
+      "automationId": "radioButton1",
+      "name": "Day",
+      "controlType": "RadioButton",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Group",
+        "RadioButton[1]"
+      ],
+      "nativeHandle": 4524300,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_c8d1e863045186c8",
+      "automationId": "radioButton2",
+      "name": "Night",
+      "controlType": "RadioButton",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Group",
+        "RadioButton[2]"
+      ],
+      "nativeHandle": 2557442,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_0fb7a6c431e1f1a3",
+      "automationId": "label6",
+      "name": "Salary Band (1-12):",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Text[6]"
+      ],
+      "nativeHandle": 3540566,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_73f79e21b15d40ff",
+      "automationId": "numericUpDown1",
+      "name": "Salary Band (1-12):",
+      "controlType": "Spinner",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Spinner"
+      ],
+      "nativeHandle": 1640014,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_1ee02096835daa00",
+      "automationId": "1902040",
+      "name": "NumericUpDown",
+      "controlType": "Spinner",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Spinner",
+        "Spinner"
+      ],
+      "nativeHandle": 1902040,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_b346fb207a0fa1b9",
+      "automationId": null,
+      "name": "Up",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Spinner",
+        "Spinner",
+        "Button[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_6817cec358b3f0cd",
+      "automationId": null,
+      "name": "Down",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Spinner",
+        "Spinner",
+        "Button[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_145797a2aef1d668",
+      "automationId": "4064788",
+      "name": "Salary Band (1-12):",
+      "controlType": "Edit",
+      "path": [
+        "Window",
+        "Pane",
+        "Group",
+        "Spinner",
+        "Edit"
+      ],
+      "nativeHandle": 4064788,
+      "patterns": [
+        "Value",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_17e6deeddbeabe1c",
+      "automationId": "panel1",
+      "name": null,
+      "controlType": "Pane",
+      "path": [
+        "Window",
+        "Pane",
+        "Pane[1]"
+      ],
+      "nativeHandle": 1574474,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_996c3a88f02f2537",
+      "automationId": "panel2",
+      "name": null,
+      "controlType": "Pane",
+      "path": [
+        "Window",
+        "Pane",
+        "Pane[2]"
+      ],
+      "nativeHandle": 1901884,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_af759e8a3d367807",
+      "automationId": "listBox1",
+      "name": null,
+      "controlType": "List",
+      "path": [
+        "Window",
+        "Pane",
+        "List"
+      ],
+      "nativeHandle": 262182,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_a05e4fd9e8fd52c1",
+      "automationId": null,
+      "name": "E001 - John Smith",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_f41dce7037eed4db",
+      "automationId": null,
+      "name": "E002 - Mary Johnson",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_6b822fcae34cb66a",
+      "automationId": null,
+      "name": "E003 - Robert Brown",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[3]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_db322622fc9e928a",
+      "automationId": null,
+      "name": "E004 - Patricia Davis",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[4]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_d6e0f00248078073",
+      "automationId": null,
+      "name": "E005 - Michael Wilson",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[5]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_80b6aad73254c99e",
+      "automationId": null,
+      "name": "E006 - Linda Miller",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[6]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_60a5a37d7f19eefe",
+      "automationId": null,
+      "name": "E007 - James Moore",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[7]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_481567c6e696034d",
+      "automationId": null,
+      "name": "E008 - Barbara Taylor",
+      "controlType": "ListItem",
+      "path": [
+        "Window",
+        "Pane",
+        "List",
+        "ListItem[8]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_26ef4c2e1abcecca",
+      "automationId": "tabControl1",
+      "name": null,
+      "controlType": "Tab",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab"
+      ],
+      "nativeHandle": 2361620,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_02727b6bade3bfdc",
+      "automationId": "tabPage1",
+      "name": "Notes",
+      "controlType": "Pane",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab",
+        "Pane"
+      ],
+      "nativeHandle": 2689358,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_3b29da530cd81864",
+      "automationId": "textBox4",
+      "name": null,
+      "controlType": "Edit",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab",
+        "Pane",
+        "Edit"
+      ],
+      "nativeHandle": 722158,
+      "patterns": [
+        "Value",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_4777b1780795f372",
+      "automationId": "NonClientVerticalScrollBar",
+      "name": "Vertical",
+      "controlType": "ScrollBar",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab",
+        "Pane",
+        "Edit",
+        "ScrollBar"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "RangeValue",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": {
+        "minimum": 0,
+        "maximum": 100,
+        "step": 1
+      },
+      "isEnabled": false
+    },
+    {
+      "id": "el_ec6bf7313fb749f6",
+      "automationId": "UpButton",
+      "name": "Line up",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab",
+        "Pane",
+        "Edit",
+        "ScrollBar",
+        "Button[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": false
+    },
+    {
+      "id": "el_f4c0b319345d367f",
+      "automationId": "DownButton",
+      "name": "Line down",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab",
+        "Pane",
+        "Edit",
+        "ScrollBar",
+        "Button[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": false
+    },
+    {
+      "id": "el_3f794e3770ef0f99",
+      "automationId": null,
+      "name": "Notes",
+      "controlType": "TabItem",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab",
+        "TabItem[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_d3a736465b08bf89",
+      "automationId": null,
+      "name": "History",
+      "controlType": "TabItem",
+      "path": [
+        "Window",
+        "Pane",
+        "Tab",
+        "TabItem[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "SelectionItem",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_7793e13187f0adf8",
+      "automationId": "button1",
+      "name": "Add",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Button[1]"
+      ],
+      "nativeHandle": 918732,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_a90c1e957c428349",
+      "automationId": "button2",
+      "name": "Update",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Button[2]"
+      ],
+      "nativeHandle": 919570,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": false
+    },
+    {
+      "id": "el_a7976ee0bd3af191",
+      "automationId": "button3",
+      "name": "Delete",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Button[3]"
+      ],
+      "nativeHandle": 657544,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_58d118ebf9c0a737",
+      "automationId": "button4",
+      "name": "Clear",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "Button[4]"
+      ],
+      "nativeHandle": 2099540,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_076d36462d966d21",
+      "automationId": "NonClientVerticalScrollBar",
+      "name": "Vertical",
+      "controlType": "ScrollBar",
+      "path": [
+        "Window",
+        "Pane",
+        "ScrollBar"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "RangeValue",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": {
+        "minimum": 0,
+        "maximum": 100,
+        "step": 1
+      },
+      "isEnabled": true
+    },
+    {
+      "id": "el_91488e863f893219",
+      "automationId": "UpButton",
+      "name": "Line up",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "ScrollBar",
+        "Button[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_3ccd3e04d902a054",
+      "automationId": "ScrollbarThumb",
+      "name": "Position",
+      "controlType": "Thumb",
+      "path": [
+        "Window",
+        "Pane",
+        "ScrollBar",
+        "Thumb"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_122b2cb74e1a20ec",
+      "automationId": "DownPageButton",
+      "name": "Page down",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "ScrollBar",
+        "Button[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_964e0b4f32e57118",
+      "automationId": "DownButton",
+      "name": "Line down",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "Pane",
+        "ScrollBar",
+        "Button[3]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_3a4645be9bb7e28a",
+      "automationId": "statusStrip1",
+      "name": null,
+      "controlType": "StatusBar",
+      "path": [
+        "Window",
+        "StatusBar"
+      ],
+      "nativeHandle": 330080,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_b2938fba7a9c52fb",
+      "automationId": null,
+      "name": "Ready.",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "StatusBar",
+        "Text[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_39aed00d24301e0d",
+      "automationId": null,
+      "name": "Records: 8",
+      "controlType": "Text",
+      "path": [
+        "Window",
+        "StatusBar",
+        "Text[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_56b11ef258768e93",
+      "automationId": "toolStrip1",
+      "name": null,
+      "controlType": "ToolBar",
+      "path": [
+        "Window",
+        "ToolBar"
+      ],
+      "nativeHandle": 657782,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_7b755e410da47d79",
+      "automationId": null,
+      "name": "Grip",
+      "controlType": "Thumb",
+      "path": [
+        "Window",
+        "ToolBar",
+        "Thumb"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_92baa4a19f364dfe",
+      "automationId": null,
+      "name": "New",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "ToolBar",
+        "Button[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_078b378a089836a2",
+      "automationId": null,
+      "name": "Save",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "ToolBar",
+        "Button[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_1857622b14b28d01",
+      "automationId": null,
+      "name": "Delete",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "ToolBar",
+        "Button[3]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_acb68cee448589f0",
+      "automationId": null,
+      "name": "Refresh",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "ToolBar",
+        "Button[4]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_33bc96f09ddd2470",
+      "automationId": "menuStrip1",
+      "name": null,
+      "controlType": "MenuBar",
+      "path": [
+        "Window",
+        "MenuBar"
+      ],
+      "nativeHandle": 6030766,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_b1d7995193cd59f6",
+      "automationId": null,
+      "name": "File",
+      "controlType": "MenuItem",
+      "path": [
+        "Window",
+        "MenuBar",
+        "MenuItem[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "ExpandCollapse",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_9fd77ee0dba7e864",
+      "automationId": null,
+      "name": "Edit",
+      "controlType": "MenuItem",
+      "path": [
+        "Window",
+        "MenuBar",
+        "MenuItem[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "ExpandCollapse",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_82dccd321d6efaa7",
+      "automationId": null,
+      "name": "View",
+      "controlType": "MenuItem",
+      "path": [
+        "Window",
+        "MenuBar",
+        "MenuItem[3]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "ExpandCollapse",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_0750ee73b25fe8bf",
+      "automationId": null,
+      "name": "Help",
+      "controlType": "MenuItem",
+      "path": [
+        "Window",
+        "MenuBar",
+        "MenuItem[4]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "ExpandCollapse",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_1e5ce53c704ecc3b",
+      "automationId": "TitleBar",
+      "name": null,
+      "controlType": "TitleBar",
+      "path": [
+        "Window",
+        "TitleBar"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Value",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_21684257fa8705ca",
+      "automationId": "SystemMenuBar",
+      "name": "System",
+      "controlType": "MenuBar",
+      "path": [
+        "Window",
+        "TitleBar",
+        "MenuBar"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "LegacyIAccessible",
+      "confidence": 2,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_96ed4ab06ec7159f",
+      "automationId": null,
+      "name": "System",
+      "controlType": "MenuItem",
+      "path": [
+        "Window",
+        "TitleBar",
+        "MenuBar",
+        "MenuItem"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "ExpandCollapse",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_793d3a2a7e72fcd0",
+      "automationId": "Minimize-Restore",
+      "name": "Minimize",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "TitleBar",
+        "Button[1]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_c1f47938867e9b24",
+      "automationId": "Maximize-Restore",
+      "name": "Maximize",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "TitleBar",
+        "Button[2]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    },
+    {
+      "id": "el_9f90828b61220474",
+      "automationId": "Close",
+      "name": "Close",
+      "controlType": "Button",
+      "path": [
+        "Window",
+        "TitleBar",
+        "Button[3]"
+      ],
+      "nativeHandle": 0,
+      "patterns": [
+        "Invoke",
+        "LegacyIAccessible"
+      ],
+      "defaultAction": null,
+      "mechanism": "UiaPattern",
+      "confidence": 3,
+      "constraints": null,
+      "isEnabled": true
+    }
+  ],
+  "coverage": {
+    "elementCount": 73,
+    "unexplored": [
+      {
+        "containerId": "el_26ef4c2e1abcecca",
+        "containerType": "Tab",
+        "reason": "UnselectedTabPage"
+      },
+      {
+        "containerId": "el_b1d7995193cd59f6",
+        "containerType": "MenuItem",
+        "reason": "UnopenedMenu"
+      },
+      {
+        "containerId": "el_9fd77ee0dba7e864",
+        "containerType": "MenuItem",
+        "reason": "UnopenedMenu"
+      },
+      {
+        "containerId": "el_82dccd321d6efaa7",
+        "containerType": "MenuItem",
+        "reason": "UnopenedMenu"
+      },
+      {
+        "containerId": "el_0750ee73b25fe8bf",
+        "containerType": "MenuItem",
+        "reason": "UnopenedMenu"
+      },
+      {
+        "containerId": "el_96ed4ab06ec7159f",
+        "containerType": "MenuItem",
+        "reason": "UnopenedMenu"
+      }
+    ]
+  }
+}

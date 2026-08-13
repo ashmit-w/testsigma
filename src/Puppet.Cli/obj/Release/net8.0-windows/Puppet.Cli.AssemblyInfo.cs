@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("puppet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c84c7ae910d3b151c295fe50eab9786ecfed9932")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d9a09b2905e341af443dde433bb9b30e851fe22")]
 [assembly: System.Reflection.AssemblyProductAttribute("puppet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("puppet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -15,15 +15,31 @@ public sealed class AutomationSession : IDisposable
     public Task<ElementNode> DumpTreeAsync(string processName) =>
         thread.InvokeAsync(() => DumpTree(processName));
 
+    public Task<ModelDocument> BuildModelAsync(string? processName, int? pid) =>
+        thread.InvokeAsync(() => BuildModel(processName, pid));
+
     private ElementNode DumpTree(string processName)
     {
         var automation = GetOrCreateAutomation();
-        var app = ProcessAttacher.Attach(processName);
+        var app = ProcessAttacher.AttachByName(processName);
 
         using (TreeDumper.BuildCacheRequest(automation).Activate())
         {
             var mainWindow = app.GetMainWindow(automation);
             return TreeDumper.Dump(mainWindow);
+        }
+    }
+
+    private ModelDocument BuildModel(string? processName, int? pid)
+    {
+        var automation = GetOrCreateAutomation();
+        var app = pid.HasValue ? ProcessAttacher.AttachByPid(pid.Value) : ProcessAttacher.AttachByName(processName!);
+        var resolvedProcessName = processName ?? app.Name;
+
+        using (ModelBuilder.BuildCacheRequest(automation).Activate())
+        {
+            var mainWindow = app.GetMainWindow(automation);
+            return ModelBuilder.Build(mainWindow, resolvedProcessName);
         }
     }
 
